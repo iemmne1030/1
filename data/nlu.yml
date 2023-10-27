@@ -1,0 +1,178 @@
+version: "3.1"
+
+nlu:
+- intent: hi
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - xin chào
+    - chào bạn 
+    - chào anh
+    - chào chị 
+    - hi chatbot
+
+- intent: bye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt 
+    - ok
+    - cảm ơn 
+    - hẹn gặp lại
+
+- intent: ask_name_month_year
+  examples: |
+    - các công trình thanh niên trong tháng [1](lt_month) năm [2023](lt_year)
+    - năm [2023](lt_year) có tổ chức những công trình nào trong tháng [7](lt_month)
+    - tháng [1](lt_month) năm [2023](lt_year) có những công trình nào ?
+    - Tháng [10](lt_month) năm [2022](lt_year) có sự kiện thanh niên nào diễn ra?
+    - Tháng [11](lt_month) năm [2022](lt_year) có công trình thanh niên nào diễn ra?
+    - Tháng [11](lt_month) năm [2022](lt_year) có những công trình nào được thực hiện bởi thanh niên?
+    - tháng [2](lt_month) năm [2021](lt_year) có công trình thanh niên nào không ?
+    - Tháng [2](lt_month) năm [2023](lt_year) có những công trình thanh niên nào được tổ chức?
+    - tháng [2](lt_month) năm [2023](lt_year) có những công trình thanh niên nổi bật nào ?
+    - Tháng [7](lt_month) năm [2022](lt_year) có sự kiện thanh niên nào diTrong tháng [7](lt_month) năm [2022](lt_year), có sự kiện thanh niên nào được tổ chức?
+    - tháng [8](lt_month) năm [2021](lt_year) có tổ chức những công trình thanh niên nào ?
+    - thống kê các công trình thanh niên trong tháng [1](lt_month) năm [2023](lt_year)
+    - Trong tháng [10](lt_month) năm [2022](lt_year), có sự kiện thanh niên nào diễn ra?
+    - Trong tháng [2](lt_month) năm [2024](lt_year), có sự kiện thanh niên nào được tổ chức?
+    - Trong tháng [3](lt_month) năm [2024](lt_year), có công trình thanh niên nào được tổ chức?
+    - trong tháng [8](lt_month) năm [2022](lt_year) có những công trình thanh niên nào diễn ra ?
+    - Xin cho biết công trình thanh niên nào diễn ra vào tháng [1](lt_month) năm [2023](lt_year)?
+    - Xin hỏi vào tháng [11](lt_month) năm [2023](lt_year), có sự kiện thanh niên nào được tổ chức?
+    - Xin vui lòng cho biết công trình thanh niên nào diễn ra vào tháng [6](lt_month) năm [2023](lt_year)?
+    - Có những công trình thanh niên gì diễn ra trong tháng [8](lt_month) của năm [2023](lt_year)?
+    - Có những công trình nào trong tháng [11](lt_month) của năm [2022](lt_year) mà thanh niên tham gia?
+    - Công trình nào của thanh niên thường diễn ra trong tháng [12](lt_month) của năm [2021](lt_year)?
+    - Công trình nào của thanh niên thường diễn ra vào tháng [8](lt_month) của năm [2022](lt_year)?
+    - Đã có những công trình gì trong tháng [4](lt_month) năm [2023](lt_year)?
+    - Kế hoạch gì cho công trình thanh niên vào tháng [3](lt_month) năm [2022](lt_year)?
+    - Năm [2023](lt_year) có kế hoạch gì cho công trình thanh niên trong tháng [2](lt_month)?
+    - Tháng [1](lt_month) năm [2023](lt_year) là thời gian của các hoạt động nghệ thuật của thanh niên?
+    - Tháng [10](lt_month) năm [2023](lt_year) có những cơ hội nào cho thanh niên tham gia các công trình ?
+    - Tháng [4](lt_month) năm [2021](lt_year) đã diễn ra những hoạt động nào của thanh niên?
+    - Tháng [6](lt_month) năm [2023](lt_year) đã có những công trình nào của thanh niên?
+    - Trong khoảng tháng [11](lt_month) đến tháng [1](lt_month) năm [2022](lt_year), đã có những công trình nào mà thanh niên được tham gia?
+    - Trong khoảng thời gian từ tháng [10](lt_month) đến tháng [12](lt_month) năm [2021](lt_year), có những hoạt động nào của thanh niên?
+    - Trong năm [2022](lt_year), tháng [5](lt_month) là thời gian của các hoạt động thanh niên nào?
+    - Trong tháng [12](lt_month) năm [2022](lt_year), đã có những công trình nào của thanh niên?
+    - Trong tháng [7](lt_month) năm [2022](lt_year), diễn ra những hoạt động gì do thanh niên tổ chức?
+    - Bạn có biết công trình trong tháng [11](lt_month) năm [2022](lt_year) không?
+    - Bạn có thông tin về công trình thanh niên trong tháng [3](lt_month) năm [2023](lt_year) không?
+    - Bạn có thông tin về các công trình trong tháng [7](lt_month) năm [2023](lt_year) không?
+    - Công trình nào diễn ra trong tháng [6](lt_month) năm [2022](lt_year)?
+    - Tháng [12](lt_month) năm [2021](lt_year), có công trình nào dành cho thanh niên không?
+    - Tháng [8](lt_month) năm [2021](lt_year), có công trình nào tạo điều kiện cho thanh niên không?
+    - Tháng [8](lt_month) năm [2021](lt_year), có công trình thanh niên nào diễn ra không?
+    - Tôi muốn biết công trình nào diễn ra trong tháng [5](lt_month) năm [2023](lt_year), bạn có thể giới thiệu cho tôi không?
+    - Tôi muốn biết công trình nào diễn ra trong tháng [5](lt_month) năm [2023](lt_year), bạn có thể giúp tôi không?
+    - Tôi muốn tìm hiểu về công trình thanh niên trong tháng [1](lt_month) năm [2023](lt_year), bạn có thông tin gì không?
+    - Tôi quan tâm đến công trình diễn ra trong tháng [1](lt_month) năm [2023](lt_year), bạn có thể giới thiệu cho tôi không?
+    - Tôi quan tâm đến công trình diễn ra trong tháng [9](lt_month) năm [2022](lt_year), bạn có thông tin gì không?
+    - Trong tháng [6](lt_month) năm [2022](lt_year), có công trình thanh niên nào đáng chú ý không?
+    - Tháng [1](lt_month) năm [2000](lt_year) có công trình nào
+
+- intent: ask_member_name
+  examples: |
+    - [vành đai xanh](lt_name:VDX) có bao nhiêu thành viên
+#    - công trình thanh niên [tuổi trẻ tình nguyện](lt_name:"tuổi trẻ tình nguyện") có bao nhiêu thành viên
+
+#- intent: ask_time_name
+#  examples: |
+#        - [vành đai xanh](lt_name) bắt đầu lúc nào ?
+#        - công trình thanh niên [tuổi trẻ tình nguyện](lt_name:TT_TN) có bao nhiêu thành viên
+
+#- intent: ask_name_date_month_year
+#  examples: |
+#    - Ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) có những công trình thanh niên nào?
+#    - Trong ngày [30](lt_date) tháng [10](lt_month) năm [2023](lt_year) có công trình thanh niên nào không?
+#    - Có dự án nào do thanh niên thực hiện vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) không?
+#    - Trong ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year), có công trình nào liên quan đến thanh niên không?
+#    - Có dự án nào do thanh niên thực hiện vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) không?
+#    - Trong ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) có công trình thanh niên nào không?
+#    - Xin thông tin về các dự án thanh niên vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year).
+#    - Có công trình nào được thực hiện bởi thanh niên vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) không?
+#    - Trong khoảng thời gian từ ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) đến ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year), có dự án thanh niên nào không?
+#    - Xin danh sách các dự án thanh niên trong ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year).
+#    - Cho tôi xin danh sách các dự án thanh niên vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year).
+#    - Có công trình nào thanh niên thực hiện vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) không?
+#    - Trong khoảng thời gian từ ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) đến ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year), có dự án thanh niên nào không?
+#    - Dự án nào thanh niên thực hiện vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) không?
+#    - Trong ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year), có công trình thanh niên nào không?
+#    - Xin danh sách các dự án thanh niên vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year).
+#    - Từ ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) đến ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year), có công trình thanh niên nào không?
+#    - Có công trình thanh niên thực hiện vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) không?
+#    - Xin danh sách các dự án công trình thanh thanh niên vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year).
+#    - Công trình thanh niên vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) là
+#    - Dự án do thanh niên thực hiện vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year).
+#    - Công trình nào được thực hiện bởi thanh niên vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year)?
+#    - Ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) có những dự án nào?
+#    - Trong ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year), có công trình nào liên quan đến thanh niên không?"
+#    - Danh sách các dự án thanh niên vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year)."
+#    - Có công trình thanh niên nào được thực hiện vào ngày [7](lt_date) tháng [6](lt_month) năm [2022](lt_year) không?"
+
+#- intent: ask_name_date
+#  examples: |
+#    - Ngày [19](lt_date) có công trình thanh niên nào?
+#    - Ngày [7](lt_date) có những công trình thanh niên nào?
+#    - Trong ngày [30](lt_date) có công trình thanh niên nào không?
+
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#    - great
+#    - amazing
+#    - feeling like a king
+#    - wonderful
+#    - I am feeling very good
+#    - I am great
+#    - I am amazing
+#    - I am going to save the world
+#    - super stoked
+#    - extremely good
+#    - so so perfect
+#    - so good
+#    - so perfect
+#
+#- intent: mood_unhappy
+#  examples: |
+#    - my day was horrible
+#    - I am sad
+#    - I don't feel very well
+#    - I am disappointed
+#    - super sad
+#    - I'm so sad
+#    - sad
+#    - very sad
+#    - unhappy
+#    - not good
+#    - not very good
+#    - extremly sad
+#    - so saad
+#    - so sad
+#
+#- intent: bot_challenge
+#  examples: |
+#    - are you a bot?
+#    - are you a human?
+#    - am I talking to a bot?
+#    - am I talking to a human?

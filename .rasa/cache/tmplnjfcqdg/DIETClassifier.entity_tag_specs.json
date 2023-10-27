@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-lt_month",
+      "2": "I-lt_month",
+      "3": "L-lt_month",
+      "4": "U-lt_month",
+      "5": "B-lt_year",
+      "6": "I-lt_year",
+      "7": "L-lt_year",
+      "8": "U-lt_year",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-lt_month": 1,
+      "I-lt_month": 2,
+      "L-lt_month": 3,
+      "U-lt_month": 4,
+      "B-lt_year": 5,
+      "I-lt_year": 6,
+      "L-lt_year": 7,
+      "U-lt_year": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

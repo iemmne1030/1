@@ -1,0 +1,79 @@
+version: "3.1"
+
+stories:
+
+- story: hi_bye
+  steps:
+  - intent: hi
+  - action: utter_hi
+  - intent: bye
+  - action: utter_bye
+
+- story: hi_ask_month_year_bye
+  steps:
+  - intent: hi
+  - action: utter_hi
+  - intent: ask_name_month_year
+  - action: action_name_month_year
+  - intent: bye
+  - action: utter_bye
+
+- story: hi_ask_member_name_bye
+  steps:
+  - intent: hi
+  - action: utter_hi
+  - intent: ask_member_name
+  - action: action_member_name
+  - intent: bye
+  - action: utter_bye
+
+#- story: hi_ask_date_month_year_bye
+#  steps:
+#  - intent: hi
+#  - action: utter_hi
+#  - intent: ask_name_date_month_year
+#  - action: action_name_date_month_year
+#  - intent: bye
+#  - action: utter_bye
+
+#- story: hi_ask_name_date_month_year_bye
+#  steps:
+#  - intent: hi
+#  - action: utter_hi
+#  - intent: ask_name_month_year
+#  - action: action_name_month_year
+#  - intent: ask_name_date_month_year
+#  - action: action_name_date_month_year
+#  - intent: bye
+#  - action: utter_bye
+
+
+#- story: hi_ask_date_bye
+#  steps:
+#  - intent: hi
+#  - action: utter_hi
+#  - intent: ask_name_date
+#  - action: action_name_date
+#  - intent: bye
+#  - action: utter_bye
+
+
+#- story: sad path 1
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye

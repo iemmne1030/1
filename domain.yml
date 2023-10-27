@@ -1,0 +1,85 @@
+version: "3.1"
+
+intents:
+  - hi
+  - bye
+  - ask_name_month_year
+  - ask_member_name
+#  - ask_name_date_month_year
+#  - ask_name_date
+#  - deny
+#  - mood_great
+#  - mood_unhappy
+#  - bot_challenge
+
+entities:
+  - lt_year
+  - lt_month
+  - lt_date
+  - lt_name
+  - places
+  - done
+  - time
+  - member
+
+slots:
+  lt_year:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: lt_year
+        value: lt_year
+  lt_month:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: lt_month
+        value: lt_month
+  lt_date:
+    type: float
+    mappings:
+      - type: from_entity
+        entity: lt_date
+        value: lt_date
+  lt_name:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: lt_name
+        value: lt_name
+
+
+responses:
+  utter_hi:
+  - text: "Xin chào! mình là chatbot trả lời các câu hỏi về công trình thanh niên"
+
+  utter_bye:
+  - text: "tạm biệt!"
+#    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+#  ask_name_month_year:
+#  - text: "Sự kiện {cttndata['name']} diễn ra vào tháng {cttndata['month']} năm {cttndata['year']}"
+
+#  utter_ask_name_month_year:
+#  - text: "Did that help you?"
+
+#  utter_happy:
+#  - text: "Great, carry on!"
+#
+#  utter_goodbye:
+#  - text: "Bye"
+#
+#  utter_iamabot:
+#  - text: "I am a bot, powered by Rasa."
+
+#session_config:
+#  session_expiration_time: 60
+#  carry_over_slots_to_new_session: true
+
+actions:
+  - utter_hi
+  - utter_bye
+  - action_name_month_year
+  - action_member_name
+#  - action_name_date_month_year
+#  - action_name_date
